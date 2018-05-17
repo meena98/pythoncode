@@ -1,12 +1,14 @@
 from setuptools import setup
 
 setup(
-    name="script",
+    name="myhello",
     version='0.1',
-    py_modules=['hello.py'],
-    install_requires=['Click',],
+    py_modules=['sqldb'],
+    install_requires=[
+        'Click',
+    ],
     entry_points='''
-    [console_scripts]
-    script=hello.py:cli
-    ''',
+            [console_scripts]
+            myhello=sqldb:cli
+        ''',
 )

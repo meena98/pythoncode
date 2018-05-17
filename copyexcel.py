@@ -4,6 +4,7 @@ from openpyxl import Workbook
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
 
+
 @click.command()
 @click.option('--capitalize',default='',help="will capitalise the contents of the worksheet")
 def cli(capitalize):
